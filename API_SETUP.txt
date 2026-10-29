@@ -1,0 +1,12 @@
+MPR JEWELLERY — API CONFIGURATION FIX
+
+Fixed: removed the invalid hard-coded API base `port/5000` and made it configurable.
+
+Before owner/admin login can work on GitHub Pages, you must have a deployed backend that implements at least `/api/auth/login` and the other `/api/*` endpoints used by this website. GitHub Pages serves static files only.
+
+To connect a deployed backend:
+1. Open config.js.
+2. Change window.API_BASE_URL = ""; to the backend origin, e.g. window.API_BASE_URL = "https://your-real-backend-domain.example";
+3. Redeploy the contents of this ZIP.
+
+Do not put passwords, tokens, or secret API keys in config.js. Do not use a made-up URL.
